@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="main.css">
+  <title>MovieApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<h1>Bolt Movie Database</h1>
+		</div>
+		
+	</div>
+
+<%= yield %>
+
+</body>
+</html>

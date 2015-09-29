@@ -1,0 +1,16 @@
+<div class="main">
+  <div class="container">
+  <h2>Actors</h2>
+    <% @actors.each do |a| %>
+    <div class="actor">
+      <%= image_tag a.image %>
+      <h3><%= a.first_name %> <%= a.last_name %></h3>      
+      <p><%= a.bio %></p>
+      <%= link_to "Learn more", actor_path(a) %>
+
+
+      
+    </div>
+    <% end %>
+  </div>
+</div>
